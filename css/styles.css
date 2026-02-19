@@ -109,13 +109,13 @@
   text-align: center;
 }
 
-#key-benefits h2{
+#key-benefits h2 {
   background-color: var(--secondary);
   padding: 1em;
   font-weight: 500;
 }
 
-.benefit{
+.benefits {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,7 +128,7 @@
   max-width: 300px;
 }
 
-.benefit.benefit-img {
+.benefit .benefit-img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -151,7 +151,7 @@
 
 /* Event location */
 #location {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0 ,0.6)), url("../img/hd1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hd1.jpg");
   background-position: center;
   background-size: cover;
   padding: 2em;
@@ -159,7 +159,7 @@
   text-align: center;
 }
 
-#addres {
+#address {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,7 +172,7 @@
   margin-bottom: 1em;
 }
 
-#addres-details p {
+#address-details p {
   margin-bottom: 0.5em;
 }
 
@@ -206,7 +206,7 @@
 }
 
 .detail h3 {
-  font-size: 1.sem;
+  font-size: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -221,6 +221,7 @@
 
 /* Call to action section */
 #cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/moto6.jpg");
   background-position: center;
   background-size: cover;
   padding: 2em;
@@ -233,17 +234,17 @@
   margin-bottom: 1em;
 }
 
-#cta.btn {
+#cta .btn {
   width: 80%;
   max-width: 300px;
 }
 
 /* Footer */
 #footer {
-  background-color: var(--text-color);
+  background-color: var(--secondary);
   padding: 2em;
   text-align: center;
-  color: var(--texto-secondary);
+  color: var(--text-secondary);
 }
 
 #footer h3 {
@@ -275,9 +276,9 @@
     font-size: 2em;
   }
 
-  .benefit {
-    -ms-flex-direction: row;
-    justify-content:space-around;
+  .benefits {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .detail {
